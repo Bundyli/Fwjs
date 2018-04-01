@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" >
+    <title>响应式工具</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /*响应式容器*/
+       /* .container header {
+            width: 100%;
+            height: 30px;
+            background-color: cyan;
+        }
+        .container section {
+            width: 100%;
+            height: 800px;
+            background-color: red;
+        }
+        .container footer{
+            width: 100%;
+            height: 40px;
+            background-color: cyan;
+        }
+        !*大屏*!
+        @media screen and (min-width: 1200px) {
+
+        }
+        !*中屏*!
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            header {
+                display: none;
+            }
+        }
+        !*小屏*!
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            header {
+                display: none;
+            }
+            section {
+                display: none;
+            }
+        }
+        !*超小屏*!
+        @media screen and (max-width: 768px) {
+            header {
+                display: none;
+            }
+            section {
+                display: none;
+            }
+            footer {
+                display: none;
+            }
+        }*/
+
+        /*响应式工具类*/
+
+    </style>
+
+</head>
+<body>
+<!--
+1.在大屏上显示 头 内容 脚
+2.在中屏上显示内容 脚
+3.在小屏上显示 脚
+4.在超小屏上不显示
+-->
+<div class="container">
+    <header class="visible-xs-block">头</header>
+    <section class="visible-md-block">内容</section>
+    <footer class="hidden-xs">脚</footer>
+</div>
+
+<script src="../lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" >
+    <title>轮播图中的非移动端（铺满盒子并且居中显示）</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .pc_imgBox {
+            width: 100%;
+            display: block;
+            height: 450px;
+            /*background-image: url('../images/slide_01_2000x410.jpg');*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+       /* .carousel-inner .item:nth-child(2) a{
+            background-image: url('../images/slide_02_2000x410.jpg');
+        }
+        .carousel-inner .item:nth-child(3) a{
+            background-image: url('../images/slide_03_2000x410.jpg');
+        }*/
+    </style>
+</head>
+<body>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!--点盒子-->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <!--图片盒子-->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="#" class="pc_imgBox" style="background-image: url('../images/slide_01_2000x410.jpg')"></a>
+        </div>
+        <div class="item">
+            <a href="#" class="pc_imgBox" style="background-image: url('../images/slide_02_2000x410.jpg')"></a>
+        </div>
+        <div class="item">
+            <a href="#" class="pc_imgBox" style="background-image: url('../images/slide_03_2000x410.jpg')"></a>
+        </div>
+    </div>
+<!--左右控制器-->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+<script src="../lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

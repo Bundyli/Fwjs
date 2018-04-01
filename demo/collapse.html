@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" >
+    <title>bootstrap中的collapse折叠组件</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<!--一个按钮控制某一区域的显示和隐藏-->
+<!--
+属性：data-toggle="collapse" 用来声明为折叠组件
+data-target="选择器" 目标控制元素 通过选择器来控制
+-->
+<button data-toggle="collapse" data-target="#box">按钮</button>
+<a href="#box" data-toggle="collapse">链接</a>
+<div class="btn" data-toggle="collapse" data-target="#box">div式的按钮</div>
+
+<!--被控制的区域-->
+<div id="box">
+    <p>内容</p>
+    <p>内容</p>
+    <p>内容</p>
+    <p>内容</p>
+    <p>内容</p>
+    <p>内容</p>
+</div>
+
+
+
+
+
+
+<script src="../lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

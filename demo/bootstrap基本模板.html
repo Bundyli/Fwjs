@@ -1,0 +1,48 @@
+<!--h5文档声明-->
+<!DOCTYPE html>
+<!--使用中文简体语言声明-->
+<html lang="zh-cn">
+<head>
+    <!--当前文档的编码声明-->
+    <meta charset="utf-8">
+    <!--指明当前浏览器按最新的渲染引擎来渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口：视口的宽度和设备一致 缩放比默认是1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" >
+    <!--上述3个meta标签必须放在最前面，任何其他内容都必须跟随在后面-->
+    <!--优先告诉浏览器用最新的浏览器来渲染页面，并且告诉浏览器这是一个移动端页面-->
+    <title>Bootstrap  Template</title>
+
+    <!-- 引入Bootstrap 核心样式库-->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--h5标签和媒体查询在IE8下有兼容问题，但是可以通过html5shiv和respond来解决-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--注意：respond不能通过file的形式（本地形式）打开的页面，可以用http形式 webstorm自带服务器-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--html5shiv h5标签的兼容  respond 媒体查询兼容-->
+
+    <!--条件注释 在IE9以下生效-->
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../lib/jquery/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

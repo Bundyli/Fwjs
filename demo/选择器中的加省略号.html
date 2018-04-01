@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+       body {
+           font-size: 30px;
+       }
+       /* li {
+            color: red;
+        }*/
+/*加号选择器 先找到选择器的元素，然后找该元素的紧邻的下一个元素*/
+       /*li + li {
+            color: red;
+        }*/
+/*先找到选择器的元素，然后找到该元素后面所有层级的元素*/
+        #four ~ li {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li id="four">2</li>
+    <li >3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>
